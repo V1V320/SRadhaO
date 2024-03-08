@@ -49,9 +49,9 @@
                         <li><a href="index.html">Home</a></li>
                         <li class="active"><a href="rooms.html">Rooms</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="events.html">Events</a></li>
+                        <li><a href="location.html">Location</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
                       </ul>
                     </div>
                   </div>
@@ -137,7 +137,7 @@
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-3 align-self-end">
-                  <button class="btn btn-primary btn-block text-white">Check Availabilty</button>
+                  <button class="btn btn-primary btn-block text-white" id="callButton">Check Availabilty</button>
                 </div>
               </div>
             </form>
@@ -149,86 +149,34 @@
     </section>
 
     
-    <section class="section">
+   
+    <section class="section bg-light">
       <div class="container">
-        
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images/img_1.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Double Bed</h2>
-                <span class="text-uppercase letter-spacing-1">90$ / per day</span>
+          <div class="row align-items-center">
+              <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                  <img src="images/dining.JPG" alt="Facilities Image" class="img-fluid">
               </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images/img_2.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Family Room</h2>
-                <span class="text-uppercase letter-spacing-1">120$ / per day</span>
+              <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                  <div class="text">
+                      <h2 class="section-heading mb-4">Our Facilities</h2>
+                      <div class="facilities mt-4">
+                          <ul class="list-unstyled">
+                              <li><i class="fa fa-wifi"></i> Free WiFi</li>
+                              <li><i class="fa fa-tv"></i> TV</li>
+                              <li><i class="fa fa-car"></i> Free Parking</li>
+                              <li><i class="fa fa-user"></i> 24/7 Room Service</li>
+                              <li><i class="fa fa-cutlery"></i> Restaurant</li>
+                              <li><i class="fa fa-smile-o"></i> Hygienic Environment</li>
+                              <li><i class="fa fa-clock-o"></i> Check-in: 11:00 aM | Check-out: 11:00 aM</li>
+                              <!-- Add more facilities with Font Awesome icons as needed -->
+                          </ul>
+                      </div>
+                  </div>
               </div>
-            </a>
           </div>
-
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images/img_3.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Restaurant with stage</h2>
-                <span class="text-uppercase letter-spacing-1">250$ / per day</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images/img_1.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Double Bed</h2>
-                <span class="text-uppercase letter-spacing-1">90$ / per day</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images/img_2.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Family suit</h2>
-                <span class="text-uppercase letter-spacing-1">120$ / per day</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images/img_3.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Restaurant with stage</h2>
-                <span class="text-uppercase letter-spacing-1">250$ / per day</span>
-              </div>
-            </a>
-          </div>
-
-        </div>
       </div>
-    </section>
-    
+  </section>
+  
     <section class="section bg-light">
 
       <div class="container">
@@ -285,8 +233,8 @@
           <div class="col-12 col-md-6 text-center mb-4 mb-md-0 text-md-left" data-aos="fade-up">
             <h2 class="text-white font-weight-bold">A Best Place To Stay. Reserve Now!</h2>
           </div>
-          <div class="col-12 col-md-6 text-center text-md-right" data-aos="fade-up" data-aos-delay="200">
-            <a href="reservation.html" class="btn btn-outline-white-primary py-3 text-white px-5">Reserve Now</a>
+          <div id="call" class="col-12 col-md-6 text-center text-md-right" data-aos="fade-up" data-aos-delay="200">
+             <a class="btn btn-outline-white-primary py-3 text-white px-5">Reserve Now</a>
           </div>
         </div>
       </div>
@@ -297,25 +245,16 @@
         <div class="row mb-4">
           <div class="col-md-3 mb-5">
             <ul class="list-unstyled link">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Terms &amp; Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-             <li><a href="#">Rooms</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 mb-5">
-            <ul class="list-unstyled link">
-              <li><a href="#">The Rooms &amp; Suites</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Restaurant</a></li>
+              <li><a href="rooms.html">The Rooms &amp; Suites</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
             </ul>
           </div>
           <div class="col-md-3 mb-5 pr-md-5 contact-info">
-            <!-- <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li> -->
-            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Address:</span> <span> 198 West 21th Street, <br> Suite 721 New York NY 10016</span></p>
-            <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span> <span> (+1) 435 3533</span></p>
-            <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span> <span> info@domain.com</span></p>
+            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Address:</span> <span>Near CNG petrol pump, Rana ki pyau, Nnadgaon rd<br>Barsana(UP) 281405,</span></p>
+            <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span> <span> 8937964789, 8865828789, 6396712788</span></p>
+            <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span> <span> hotelradhaorchidinfo@gmail.com</span></p>
           </div>
         </div>
         <div class="row pt-5">
@@ -349,7 +288,7 @@
     <script src="js/jquery.timepicker.min.js"></script> 
 
     
-
+    <script src="js/call.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
