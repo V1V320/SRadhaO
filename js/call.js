@@ -7,7 +7,7 @@ document.getElementById('callButton').addEventListener('click', function() {
         window.location.href = 'tel:' + phoneNumber;
     } else {
         // Show message for desktop users
-        alert('Please call OR whatsapp us at ' + phoneNumber + ' to check availability.');
+        alert('Please call OR whatsapp us 8937964789, 8865828789, +916396712788 to check availability.');
     }
 });
 document.getElementById('call').addEventListener('click', function() {
@@ -19,7 +19,7 @@ document.getElementById('call').addEventListener('click', function() {
         window.location.href = 'tel:' + phoneNumber;
     } else {
         // Show message for desktop users
-        alert('Please call OR whatsapp us at ' + phoneNumber + ' to check availability.');
+        alert('Please call OR whatsapp us  8937964789, 8865828789, +916396712788 to check availability.');
     }
 });
 
